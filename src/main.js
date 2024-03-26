@@ -1,8 +1,11 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
+// import animateTitle from './features/animateTitle'
+// import createBadge from './features/createBasge'
 import './styles/style.css'
 
-console.log('Welcome to Vite + JS + Webflow!')
+const button = document.querySelector('.button')
+const infoPanel = document.querySelector('.info_panel')
 
-createBadge()
-animateTitle()
+button.addEventListener('click', () => {
+  button.style.display = 'none'
+  infoPanel.style.display = 'flex'
+})
